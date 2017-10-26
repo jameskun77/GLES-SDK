@@ -31,6 +31,7 @@ public class AirHockeyActivity extends AppCompatActivity {
 
         if(supportEs2){
             glSurfaceView.setEGLContextClientVersion(2);
+            //glSurfaceView.setEGLConfigChooser(8,8,8,8,16,0);
 
             glSurfaceView.setRenderer(new AirHockeyRenderer(this));
             rendererSet = true;
